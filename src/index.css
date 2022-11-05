@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Merriweather&family=Open+Sans:wght@500&family=Roboto:wght@300&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("./img/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+header, .bg-settings {
+  background-color: #fff;
+}
+
+.blue {
+  color: #38B6FF;
+  font-weight: bold;
+}
+
+.dashboard {
+  text-align: center;
+  background-color: black;
+  padding: 14%;
+  opacity:0.7;
+}
+
+.dashboard-title {
+  font-size: 90px;
+  color: #fff;
+}
+
+.company-profile, .our-services-section, .lets-booking-section {
+  background-color : #fff;
+  padding: 20px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.row {
+  margin: 0% 10%;
+}
+
+.title-section {
+  color:#38B6FF;
+  font-weight: 800;
+  text-align: center;
+}
+
+Button {
+  background-color: #38B6FF;
+   color: #fff;  
+}
+
+Button a {
+  text-decoration: none;
+}
+
+Button a:hover {
+  font-weight: 500;
+  color: #fff;
+}
+
+.main-dashboard-pages {
+  background-color: #fff;
+  padding: 10px;
+}
+
+.card-img-top {
+  width:320px;
+  height:320px;
+}
+
+.a-remove-decoration {
+  text-decoration: none;
+  color:black;
+}
+
+.fss-3 {
+  font-size:10px;
+}
+
+.fss-45 {
+  font-size:13px;
+}
+
+.fss-4 {
+  font-size:16px;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.list-option-settings:hover {
+   color:#38B6FF;
+}
+
+.img-review {
+  width: 50px;
+  height: 50px;
+}
+
+footer {
+  background-color : #fff;
+  padding: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  padding:10px;
+}
+
+footer a:hover {
+  color:#38B6FF;
+}
+
+@media only screen and (max-width: 800px){
+  .dashboard-title {
+    font-size: 45px;
+  }
+
+  img {
+    width:100%;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  p, li, .fss-4, .fa-1x{
+    font-size: 12px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .list-unstyled .fs-5{
+    font-size: 0.7rem;
+    padding:3px;
+  }
+
+  .card-img-top {
+    width:200px;
+    height:200px;
+  }
+
+  .title-section {
+    font-size: 22px;
+  }
+}
