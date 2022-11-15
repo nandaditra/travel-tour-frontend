@@ -3,8 +3,8 @@ import "../index.css"
 
 export const Packet = ({packet}) => {  
     return(
-           <div className=" col-sm-6 col-md-3 borders">
-               <Link className="a-remove-decoration" to="overviewdata">
+           <div className=" col-sm-6 col-md-3 borders" key={packet.id}>
+               <Link className="a-remove-decoration" to={`/dashboard/${packet.id}`}>
                     <img src={packet.urlImage} className="card-img-top w-150 rounded-4" alt=""/>
                           <div className="card-body text-start">  
                                <p hidden>Id: : {packet.id}</p>

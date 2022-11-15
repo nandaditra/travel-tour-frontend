@@ -14,7 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/dashboard/overviewdata" element={<OverviewData />} />
+          <Route path="/dashboard/:packetId" element={<OverviewData />} />
           <Route path="/settings/" element={<Settings />}>
             <Route index element={<PersonalData />}/>
             <Route path="/settings/other" element={<Other />}/>
