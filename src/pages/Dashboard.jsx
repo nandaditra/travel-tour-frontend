@@ -1,4 +1,3 @@
-import { useState } from "react" 
 import HeaderPage from "../components/HeaderPage"
 import FooterPage from "../components/FooterPage"
 import NotFoundPage from "./NotFoundPage"
@@ -7,15 +6,7 @@ import { datas } from "./apidatas"
 import "../index.css"
 
 export default function Dashboard() {
-    const [search, setSearch] = useState()
-    
-    const findData = datas.find((data) => data.name === datas)
-
-    // const seacrhQuery = () => {
-    //     setSearch()
-    // }
-
-    if(search) {
+    if(null) {
         return <NotFoundPage />
     } else {
         return (
