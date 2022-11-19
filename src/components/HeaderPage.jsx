@@ -5,6 +5,7 @@ import icon from "../img/travel-tour.png"
 import "../index.css"
 
 export default function HeaderPage() {
+
     return (
         <div>
             <header>
