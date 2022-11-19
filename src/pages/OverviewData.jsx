@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import Header from "../components/HeaderPage"
 import Footer from "../components/FooterPage"
 import { datas } from "./apidatas"
@@ -74,7 +74,7 @@ export default function OverviewData() {
                                         <p className="m-0 fss-4">3</p>
                                     </div>
                                 </div>
-                                <button className="btn btn-danger w-100 my-2">Reserve</button>
+                                <Link to={`/dashboard/${packetId}/orderpacket`}><button className="btn btn-danger w-100 my-2">Reserve</button></Link>
                                   <p className="text-center fss-3">You won't be charged yet</p>
                                   <div className="col-12 mb-3">
                                       {price} x 2 hour <span className="text-end float-end"> ${countPrice.toString()}</span>

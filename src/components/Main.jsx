@@ -8,7 +8,7 @@ export default function Main() {
     return (
         <div>
             <main className="">
-                <section className="dashboard">
+                <section className="dashboard" >
                    <h1 className="dashboard-title">Enjoy Your Holiday in Peace and Happiness</h1>
                 </section>
 

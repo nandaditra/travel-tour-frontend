@@ -6,6 +6,7 @@ import Settings from './pages/Settings'
 import PersonalData from './pages/PersonalData'
 import Other from './pages/Other'
 import NotFoundPage from './pages/NotFoundPage';
+import OrderPacket from "./pages/OrderPacket";
 import './App.css';
 
 function App() {
@@ -16,13 +17,13 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/dashboard/:packetId" element={<OverviewData />} />
+          <Route path="/dashboard/:packetId/orderpacket" element={< OrderPacket/> }/>
           <Route path="/settings/" element={<Settings />}>
             <Route index element={<PersonalData />}/>
             <Route path="/settings/other" element={<Other />}/>
           </Route>
           <Route path="*" element={<NotFoundPage />}/>
-        </Routes>
-          
+        </Routes>    
       </BrowserRouter>
     </div>
   );
