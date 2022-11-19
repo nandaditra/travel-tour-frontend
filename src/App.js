@@ -1,4 +1,3 @@
-import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom" 
 import LandingPage from './pages/LandingPage'
 import Dashboard from './pages/Dashboard';
@@ -6,6 +5,8 @@ import OverviewData from './pages/OverviewData';
 import Settings from './pages/Settings'
 import PersonalData from './pages/PersonalData'
 import Other from './pages/Other'
+import NotFoundPage from './pages/NotFoundPage';
+import './App.css';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route index element={<PersonalData />}/>
             <Route path="/settings/other" element={<Other />}/>
           </Route>
+          <Route path="*" element={<NotFoundPage />}/>
         </Routes>
           
       </BrowserRouter>
