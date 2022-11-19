@@ -15,7 +15,7 @@ export default function Dashboard() {
     //     setSearch()
     // }
 
-    if(search !== findData) {
+    if(!search) {
         return <NotFoundPage />
     } else {
         return (
