@@ -4,14 +4,13 @@ import Footer from "../components/FooterPage"
 import { datas } from "./apidatas"
 import "../index.css"
 
-
 export default function OverviewData() {
     const { packetId } = useParams(); 
     const packet = datas.find((packet)=> packet.id === packetId);
     const { name, location, country, urlImage, description, commentatory, price } = packet
-
+   
     var countPrice = parseInt(price)*2
-    var totalPrice = countPrice+  50 + 35
+    var totalPrice = countPrice +  50 + 35
 
     return(
         <>
