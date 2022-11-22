@@ -3,15 +3,22 @@ import Header from "../components/HeaderPage"
 import Footer from "../components/FooterPage"
 import { datas } from "./apidatas"
 import "../index.css"
+import { useEffect, useState } from "react"
 
 export default function OverviewData() {
+    let [countPrice , setCountPrice] = useState(0)
+    let [totalPrice, setTotalPrice] = useState(0)
     const { packetId } = useParams(); 
     const packet = datas.find((packet)=> packet.id === packetId);
     const { name, location, country, urlImage, description, commentatory, price } = packet
-   
-    var countPrice = parseInt(price)*2
-    var totalPrice = countPrice +  50 + 35
-
+    
+    useEffect(()=> {
+        setTimeout(() => {
+            setCountPrice(parseInt(price)*2)
+            setTotalPrice(countPrice +  50 + 35)
+        }, 1000)
+    })
+ 
     return(
         <>
           <Header />
@@ -77,7 +84,7 @@ export default function OverviewData() {
                                 <Link to={`/dashboard/${packetId}/orderpacket`}><button className="btn btn-danger w-100 my-2">Reserve</button></Link>
                                   <p className="text-center fss-3">You won't be charged yet</p>
                                   <div className="col-12 mb-3">
-                                      {price} x 2 hour <span className="text-end float-end"> ${countPrice.toString()}</span>
+                                      {price} x 2 hour <span className="text-end float-end"> ${countPrice}</span>
                                   </div>
                                   <div className="col-12 mb-3">
                                       Guide Fee  <span className="text-end float-end">$50</span>
@@ -88,7 +95,7 @@ export default function OverviewData() {
 
                                   <hr />
                                   <div className="col-12">
-                                      Total  <span className="text-end float-end">${totalPrice.toString()}</span>
+                                      Total  <span className="text-end float-end">${totalPrice}</span>
                                   </div>
                               </div>
                             </div>
