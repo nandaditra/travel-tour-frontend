@@ -1,17 +1,17 @@
 import React from 'react'
-import { useState } from 'react'
+// import { useState } from 'react'
 import FooterPage from '../../components/FooterPage'
 import '../../index.css'
 
 export default function OrderPacket() {
-    const [name, setName] = useState() 
-    const [date, setDate] = useState()
-    const [person, setPerson] = useState()
-    const [country, setCountry] = useState()
-    const [province, setProvince] = useState()
-    const [Regions, seRegions] = useState()
-    const [phoneNumber, setPhoneNumber] = useState()
-    const [address, setAddress] = useState()
+    // const [name, setName] = useState() 
+    // const [date, setDate] = useState()
+    // const [person, setPerson] = useState()
+    // const [country, setCountry] = useState()
+    // const [province, setProvince] = useState()
+    // const [Regions, seRegions] = useState()
+    // const [phoneNumber, setPhoneNumber] = useState()
+    // const [address, setAddress] = useState()
 
     return (
             <div className="bg-white p-5">
