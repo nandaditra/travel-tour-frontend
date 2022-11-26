@@ -8,6 +8,7 @@ import { useEffect, useState } from "react"
 
 export default function Dashboard() {
     const [mounted, setMounted] = useState(false)
+    const [loading, setLoading] = useState(false)
     const [data, setData] = useState([])
  
     const fetchData = () => setData(datas)
@@ -16,17 +17,18 @@ export default function Dashboard() {
             console.log("Pages on loading...")
             if(!mounted) {
                 setMounted(true)
+                setLoading(true)
             }
         }, 3000)   
         return fetchData  
     })
 
 
-    if(null) {
+    if(loading === false) {
         return <NotFoundPage />
     } else {
         return (
-            <div >
+            <>
               <HeaderPage />
                 <main className="main-dashboard-pages">
                 <div className="container-fluid"> 
@@ -41,7 +43,7 @@ export default function Dashboard() {
                 </div>
                 </main>
               <FooterPage />
-            </div>
+            </>
       )
   }
 
