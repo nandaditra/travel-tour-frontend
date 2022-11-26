@@ -17,7 +17,7 @@ export default function Header() {
 
                     <div className="collapse navbar-collapse ms-auto" id="navbarNavDropdown">
                         <ul className="navbar-nav  ms-auto">
-                            <li className="nav-item "><a className="nav-link blue" href="http://localhost:3000">Home</a></li>
+                            <li className="nav-item "><a className="nav-link blue" href="/">Home</a></li>
                             <li className="nav-item "><a className="nav-link blue" href="#company">What's is</a></li>
                             <li className="nav-item "><a className="nav-link blue" href="#our-services">Our Services</a></li>
                             <li className="nav-item "><a className="nav-link blue" href="#lets-book-services">Let's Booking</a></li>
