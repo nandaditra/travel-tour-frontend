@@ -1,8 +1,8 @@
 import { Link, useParams } from "react-router-dom"
-import Header from "../components/HeaderPage"
-import Footer from "../components/FooterPage"
-import { datas } from "./apidatas"
-import "../index.css"
+import Header from "../../components/HeaderPage"
+import Footer from "../../components/FooterPage"
+import { datas } from "../apidatas"
+import "../../index.css"
 import { useEffect, useState } from "react"
 
 export default function OverviewData() {

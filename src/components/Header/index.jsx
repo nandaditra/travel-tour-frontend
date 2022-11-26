@@ -1,6 +1,6 @@
-import icon from "../img/travel-tour.png"
+import icon from "../../img/travel-tour.png"
 import {Link} from "react-router-dom"
-import "../index.css"
+import "../../index.css"
 
 export default function Header() {
     return (

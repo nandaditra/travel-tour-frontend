@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom"
-import { Login } from "../pages/Login"
-import { SignIn } from "../pages/SignIn"
-import icon from "../img/travel-tour.png"
-import "../index.css"
+import { Login } from "../../pages/Login"
+import { SignIn } from "../../pages/SignIn"
+import icon from "../../img/travel-tour.png"
+import "../../index.css"
 
 export default function HeaderPage() {
     return (

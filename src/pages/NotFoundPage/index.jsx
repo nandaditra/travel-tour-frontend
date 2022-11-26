@@ -1,7 +1,7 @@
-import HeaderPage from '../components/HeaderPage'
-import FooterPage from '../components/FooterPage'
-import notFound from '../img/not-found.png'
-import '../index.css'
+import HeaderPage from '../../components/HeaderPage'
+import FooterPage from '../../components/FooterPage'
+import notFound from '../../img/not-found.png'
+import '../../index.css'
 
 export default function NotFoundPage() {
      return (

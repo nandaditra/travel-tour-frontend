@@ -1,6 +1,6 @@
 import { Outlet, Link } from "react-router-dom"
-import Footer from "../components/Footer"
-import "../index.css"
+import Footer from "../../components/Footer"
+import "../../index.css"
 
 export default function Settings() {
     return (

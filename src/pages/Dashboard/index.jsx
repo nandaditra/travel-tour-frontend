@@ -1,9 +1,9 @@
-import HeaderPage from "../components/HeaderPage"
-import FooterPage from "../components/FooterPage"
-import NotFoundPage from "./NotFoundPage"
-import {Packet} from  "./Packet"
-import { datas } from "./apidatas"
-import "../index.css"
+import HeaderPage from "../../components/HeaderPage"
+import FooterPage from "../../components/FooterPage"
+import NotFoundPage from "../NotFoundPage"
+import {Packet} from  "../Packet"
+import { datas } from "../apidatas"
+import "../../index.css"
 import { useEffect, useState } from "react"
 
 export default function Dashboard() {

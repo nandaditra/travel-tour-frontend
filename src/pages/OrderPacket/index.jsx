@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
-import FooterPage from '../components/FooterPage'
-import '../index.css'
+import FooterPage from '../../components/FooterPage'
+import '../../index.css'
 
 export default function OrderPacket() {
     const [name, setName] = useState() 

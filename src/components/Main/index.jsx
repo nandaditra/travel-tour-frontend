@@ -1,6 +1,6 @@
-import "../index.css"
-import profile from "../img/company-profile.png"
-import web from "../img/lets-go.png"
+import "../../index.css"
+import profile from "../../img/company-profile.png"
+import web from "../../img/lets-go.png"
 import { Link } from "react-router-dom"
 import Button from '@mui/material/Button'; 
 

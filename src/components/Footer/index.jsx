@@ -1,6 +1,6 @@
-import "../index.css"
+import "../../index.css"
 
-export default function FooterPage() {
+export default function Footer() {
     return (
       <footer>
           <ul>
