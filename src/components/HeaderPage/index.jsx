@@ -11,9 +11,8 @@ export default function HeaderPage() {
             <header>
                <nav className="navbar navbar-expand-lg sticky-top">
                    <div className="container-fluid">
-                        <div className="m-0 p-0">
-                            <img className="navbar-brand w-50 m-0" src={icon} alt="travel-tour.png"/>
-                        </div>
+                        <img className="navbar-brand img-icon" src={icon} alt="travel-tour.png"/>
+                
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>

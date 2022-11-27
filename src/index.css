@@ -69,6 +69,9 @@ Button a:hover {
   color: #fff;
 }
 
+.img-icon {
+  width: 15%;
+}
 .main-dashboard-pages {
   background-color: #fff;
   padding: 10px;
@@ -125,9 +128,17 @@ footer a:hover {
   color:#38B6FF;
 }
 
+.w-150{
+  width: 100%;
+}
+
 @media only screen and (max-width: 800px){
   .dashboard-title {
     font-size: 45px;
+  }
+
+  .container {
+    margin: 1% 0%;
   }
 
   img {
@@ -137,11 +148,19 @@ footer a:hover {
   }
 
   p, li, .fss-4, .fa-1x{
-    font-size: 12px;
+    font-size: 14px;
   }
 
   h3 {
     font-size: 20px;
+  }
+
+  .img-icon {
+    width: 25%;
+  }
+
+  .w-150 {
+    width:100%
   }
 
   .list-unstyled .fs-5{
