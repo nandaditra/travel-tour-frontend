@@ -5,6 +5,7 @@ import icon from "../../img/travel-tour.png"
 import "../../index.css"
 
 export default function HeaderPage() {
+
     return (
         <div>
             <header>
@@ -18,14 +19,6 @@ export default function HeaderPage() {
                         </button>
 
                         <div className="collapse navbar-collapse ms-auto" id="navbarNavDropdown">
-                           <form className="d-flex" role="search">
-                                <input className="form-control me-2" 
-                                       name="search" type="search" 
-                                       placeholder="hotel, tourist, and etx" 
-                                       aria-label="Search"
-                                       />
-                                <button className="btn btn-outline-info" type="submit">Search</button>
-                           </form>
 
                            <div className="btn-group me-5 ms-auto">
                             <button className="btn btn-sm dropdown-toggle blue" type="button" data-bs-toggle="dropdown" aria-expanded="false">
